@@ -10,6 +10,34 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Animate View Controller-->
+        <scene sceneID="J9L-jJ-bZ3">
+            <objects>
+                <viewController id="dNL-G1-qsb" customClass="AnimateViewController" customModule="ShareEat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5I7-6e-2Mc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1_86GJwqFLJcWlnP1h6n3nnw" translatesAutoresizingMaskIntoConstraints="NO" id="j0d-0Y-Pcf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-03-30 at 8.02.39 PM" translatesAutoresizingMaskIntoConstraints="NO" id="Evx-Nv-ZJy">
+                                <rect key="frame" x="67" y="20" width="240" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cYq-9K-0bM"/>
+                    </view>
+                    <connections>
+                        <outlet property="mrLogo" destination="Evx-Nv-ZJy" id="2iX-nl-6dM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FRr-s1-mVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-762.39999999999998" y="132.68365817091455"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -161,4 +189,8 @@
             <point key="canvasLocation" x="136.80000000000001" y="902.69865067466276"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1_86GJwqFLJcWlnP1h6n3nnw" width="1600" height="1061"/>
+        <image name="Screen Shot 2018-03-30 at 8.02.39 PM" width="218" height="70"/>
+    </resources>
 </document>

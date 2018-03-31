@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  AnimateViewController.swift
 //  ShareEat
 //
 //  Created by Biswash Adhikari on 3/30/18.
@@ -8,14 +8,19 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class AnimateViewController: UIViewController {
 
+    @IBOutlet weak var mrLogo: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        UIView.animate(withDuration: 0.5) {
+            self.mrLogo.center.y += 300
+            
+        }
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  LaunchScreenViewController.swift
 //  ShareEat
 //
 //  Created by Biswash Adhikari on 3/30/18.
@@ -8,11 +8,15 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
-
+class LaunchScreenViewController: Launc {
+    @IBOutlet weak var mrLogo: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        UIView.animate(withDuration: 0.5) {
+            self.mrLogo.center.y += 300
+            
+        }
         // Do any additional setup after loading the view.
     }
 
