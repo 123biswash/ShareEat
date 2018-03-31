@@ -15,6 +15,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var tableView: UITableView!
     
+    let refreshControl = UIRefreshControl()
+    
     var posts: [Post] = []
     
     override func viewDidLoad() {
@@ -34,8 +36,16 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         addFoodButton.layer.backgroundColor = UIColor(red: 0, green: 0.5, blue: 1, alpha: 0.9).cgColor
         addFoodButton.setTitleColor(UIColor(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
         
+        refreshControl.addTarget(self, action: #selector(self.refreshPostsAction(_:)), for: UIControlEvents.valueChanged)
+        // add refresh control to table view
+        tableView.insertSubview(refreshControl, at: 0)
+        
         loadPostFromParse()
         
+    }
+    
+    @objc func refreshPostsAction(_ refreshControl: UIRefreshControl) {
+        loadPostFromParse()
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,7 +66,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 print("Failed to get posts")
             }
             self.tableView.reloadData()
-            //self.refreshControl.endRefreshing()
+            self.refreshControl.endRefreshing()
         }
         
     }
@@ -68,9 +78,23 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    @IBAction func logoutButtonAction(_ sender: Any) {
+        NotificationCenter.default.post(name: NSNotification.Name("didLogout"), object: nil)
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "detailSegue" {
+            let cell = sender as! UITableViewCell
+            if let indexPath = tableView.indexPath(for: cell) {
+                let detailVC = segue.destination as! DetailsViewController
+                detailVC.post = posts[indexPath.row]
+            }
+        }
     }
     
 

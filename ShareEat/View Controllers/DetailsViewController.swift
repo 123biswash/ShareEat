@@ -7,18 +7,24 @@
 //
 
 import UIKit
-import  HCSStarRatingView
+import ParseUI
+import HCSStarRatingView
+import DateToolsSwift
 
 class DetailsViewController: UIViewController {
 
     @IBOutlet weak var buyButton: UIButton!
-    @IBOutlet weak var foodImageView: UIImageView!
+    @IBOutlet weak var foodImageView: PFImageView!
     @IBOutlet weak var foodDetailDescriptionLabel: UILabel!
     @IBOutlet weak var timeSincePostLabel: UILabel!
     @IBOutlet weak var foodNameLabel: UILabel!
     @IBOutlet weak var reviewsCountLabel: UILabel!
     @IBOutlet weak var chefNameLabel: UILabel!
-    @IBOutlet weak var chefImageView: UIImageView!
+    @IBOutlet weak var chefImageView: PFImageView!
+    @IBOutlet weak var categoryLabel: UILabel!
+    
+    var post: Post!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,10 +34,23 @@ class DetailsViewController: UIViewController {
         buyButton.layer.backgroundColor = UIColor(red: 0, green: 0.5, blue: 1, alpha: 0.9).cgColor
         buyButton.setTitleColor(UIColor(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
         
+        chefImageView.layer.cornerRadius = 10
 
         // Do any additional setup after loading the view.
+        loadDetailView()
     }
-
+    
+    func loadDetailView() {
+        foodImageView.file = post.foodPicture
+        foodImageView.loadInBackground()
+        foodNameLabel.text = post.foodName
+        foodDetailDescriptionLabel.text = post.foodDescription
+        timeSincePostLabel.text = post.createdAt?.shortTimeAgoSinceNow
+        categoryLabel.text = post.foodCategory
+        
+        
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
