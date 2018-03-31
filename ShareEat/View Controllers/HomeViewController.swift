@@ -1,14 +1,14 @@
 //
-//  LoginViewController.swift
+//  HomeViewController.swift
 //  ShareEat
 //
-//  Created by Biswash Adhikari on 3/30/18.
+//  Created by Anish Adhikari on 3/30/18.
 //  Copyright © 2018 Biswash Adhikari. All rights reserved.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

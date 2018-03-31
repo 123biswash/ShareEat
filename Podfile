@@ -6,11 +6,11 @@ target 'ShareEat' do
   use_frameworks!
 
   # Pods for ShareEat
+  pod 'Parse'
 
   target 'ShareEatTests' do
     inherit! :search_paths
-    pod 'Parse'
-    # Pods for testing
+        # Pods for testing
   end
 
   target 'ShareEatUITests' do
