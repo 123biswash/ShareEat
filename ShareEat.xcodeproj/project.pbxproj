@@ -138,11 +138,7 @@
 		4806B4C9206EF9020067A39A /* ShareEat */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				7D8D65AD206F2568003B06DE /* Model */,
-=======
 				F8C91AA2206F256C000E91FB /* Model */,
->>>>>>> c136dbf171ac0d8e74009a93c0e32cc7e374efaa
 				F8C91A99206F123E000E91FB /* View Controllers */,
 				4806B4CA206EF9020067A39A /* AppDelegate.swift */,
 				4806B4CE206EF9030067A39A /* Main.storyboard */,
