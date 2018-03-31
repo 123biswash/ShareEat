@@ -22,6 +22,7 @@
 		F8C91A9B206F1257000E91FB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91A9A206F1257000E91FB /* HomeViewController.swift */; };
 		F8C91A9F206F2502000E91FB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91A9E206F2502000E91FB /* LoginViewController.swift */; };
 		F8C91AA1206F2509000E91FB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91AA0206F2509000E91FB /* SignUpViewController.swift */; };
+		F8C91AA4206F302F000E91FB /* AddFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91AA3206F302E000E91FB /* AddFoodViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		F8C91A9A206F1257000E91FB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F8C91A9E206F2502000E91FB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F8C91AA0206F2509000E91FB /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F8C91AA3206F302E000E91FB /* AddFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 				F8C91AA0206F2509000E91FB /* SignUpViewController.swift */,
 				F8C91A9E206F2502000E91FB /* LoginViewController.swift */,
 				F8C91A9A206F1257000E91FB /* HomeViewController.swift */,
+				F8C91AA3206F302E000E91FB /* AddFoodViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -504,6 +507,7 @@
 				7D8D65A4206F1368003B06DE /* Post.swift in Sources */,
 				F8C91AA1206F2509000E91FB /* SignUpViewController.swift in Sources */,
 				7D8D65A8206F18B2003B06DE /* Review.swift in Sources */,
+				F8C91AA4206F302F000E91FB /* AddFoodViewController.swift in Sources */,
 				F8C91A9B206F1257000E91FB /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
