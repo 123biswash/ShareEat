@@ -22,6 +22,8 @@
 		7D8D65AC206F24A0003B06DE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D65AB206F24A0003B06DE /* SignUpViewController.swift */; };
 		E59201397CFEC19F0542D64A /* Pods_ShareEatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F595F7AB8D861249A2699456 /* Pods_ShareEatTests.framework */; };
 		F8C91A9B206F1257000E91FB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91A9A206F1257000E91FB /* HomeViewController.swift */; };
+		F8C91A9F206F2502000E91FB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91A9E206F2502000E91FB /* LoginViewController.swift */; };
+		F8C91AA1206F2509000E91FB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91AA0206F2509000E91FB /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		CA9796EF04FCDBFB7799E2A9 /* Pods_ShareEatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareEatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F595F7AB8D861249A2699456 /* Pods_ShareEatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareEatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C91A9A206F1257000E91FB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F8C91A9E206F2502000E91FB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F8C91AA0206F2509000E91FB /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +138,11 @@
 		4806B4C9206EF9020067A39A /* ShareEat */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				7D8D65AD206F2568003B06DE /* Model */,
+=======
+				F8C91AA2206F256C000E91FB /* Model */,
+>>>>>>> c136dbf171ac0d8e74009a93c0e32cc7e374efaa
 				F8C91A99206F123E000E91FB /* View Controllers */,
 				4806B4CA206EF9020067A39A /* AppDelegate.swift */,
 				4806B4CE206EF9030067A39A /* Main.storyboard */,
@@ -189,11 +197,23 @@
 		F8C91A99206F123E000E91FB /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+
 				7D8D65AB206F24A0003B06DE /* SignUpViewController.swift */,
 				7D8D65A9206F2499003B06DE /* LoginViewController.swift */,
+
 				F8C91A9A206F1257000E91FB /* HomeViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F8C91AA2206F256C000E91FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7D8D65A3206F1368003B06DE /* Post.swift */,
+				7D8D65A7206F18B2003B06DE /* Review.swift */,
+				7D8D65A5206F17B3003B06DE /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -496,11 +516,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				7D8D65AA206F2499003B06DE /* LoginViewController.swift in Sources */,
 				7D8D65AC206F24A0003B06DE /* SignUpViewController.swift in Sources */,
+=======
+>>>>>>> c136dbf171ac0d8e74009a93c0e32cc7e374efaa
 				4806B4CB206EF9020067A39A /* AppDelegate.swift in Sources */,
 				7D8D65A6206F17B3003B06DE /* User.swift in Sources */,
+				F8C91A9F206F2502000E91FB /* LoginViewController.swift in Sources */,
 				7D8D65A4206F1368003B06DE /* Post.swift in Sources */,
+				F8C91AA1206F2509000E91FB /* SignUpViewController.swift in Sources */,
 				7D8D65A8206F18B2003B06DE /* Review.swift in Sources */,
 				F8C91A9B206F1257000E91FB /* HomeViewController.swift in Sources */,
 			);

@@ -18,8 +18,8 @@ class User: PFObject, PFSubclassing {
     @NSManaged var profilePicture: PFFile
     @NSManaged var rating: Double
     var reviews: [Review] = []
-    
-    
+
+
 
     /* Needed to implement PFSubclassing interface */
     class func parseClassName() -> String {
