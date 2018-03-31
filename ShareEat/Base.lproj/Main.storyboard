@@ -14,7 +14,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="ShareEat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainLoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="ShareEat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -563,6 +563,7 @@
                                                 <connections>
                                                     <action selector="didPressBuy:" destination="61L-DF-Kxl" eventType="touchUpInside" id="kzL-w8-jZU"/>
                                                     <action selector="loginAction:" destination="RdM-9m-CYw" eventType="touchUpInside" id="oUC-pC-2sE"/>
+                                                    <segue destination="Os8-SQ-2o8" kind="show" id="sl6-on-A50"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mexican/ Hawaii" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSO-HE-ufN">
@@ -671,7 +672,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Confirm"/>
                                 <connections>
-                                    <action selector="didTapConfirm:" destination="Os8-SQ-2o8" eventType="touchUpInside" id="eL3-H1-dO8"/>
+                                    <action selector="didTapConfirm:" destination="Os8-SQ-2o8" eventType="touchUpInside" id="8KQ-Pl-QuO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Dc-gb-TnV">
@@ -679,7 +680,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
-                                    <action selector="didTapCancel:" destination="Os8-SQ-2o8" eventType="touchUpInside" id="IAr-dC-V25"/>
+                                    <action selector="didTapCancel:" destination="Os8-SQ-2o8" eventType="touchUpInside" id="Mr4-s4-Sfu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -688,7 +689,7 @@
                     </view>
                     <connections>
                         <outlet property="cancelButton" destination="4Dc-gb-TnV" id="v65-3L-zGM"/>
-                        <outlet property="confirmButton" destination="AaI-hY-XWE" id="JQW-E3-MUC"/>
+                        <outlet property="confirmButton" destination="AaI-hY-XWE" id="ycc-38-RdM"/>
                         <outlet property="mapKitView" destination="eTY-m9-Gtb" id="yib-7J-k2I"/>
                     </connections>
                 </viewController>
