@@ -9,15 +9,25 @@
 /* Begin PBXBuildFile section */
 		34AE0DD9B77BDA6C76CD7583 /* Pods_ShareEatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9796EF04FCDBFB7799E2A9 /* Pods_ShareEatUITests.framework */; };
 		4806B4CB206EF9020067A39A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4806B4CA206EF9020067A39A /* AppDelegate.swift */; };
-		4806B4CD206EF9020067A39A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4806B4CC206EF9020067A39A /* ViewController.swift */; };
 		4806B4D0206EF9030067A39A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4806B4CE206EF9030067A39A /* Main.storyboard */; };
 		4806B4D2206EF9030067A39A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4806B4D1206EF9030067A39A /* Assets.xcassets */; };
 		4806B4D5206EF9030067A39A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4806B4D3206EF9030067A39A /* LaunchScreen.storyboard */; };
 		4806B4E0206EF9030067A39A /* ShareEatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4806B4DF206EF9030067A39A /* ShareEatTests.swift */; };
 		4806B4EB206EF9030067A39A /* ShareEatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4806B4EA206EF9030067A39A /* ShareEatUITests.swift */; };
-		4806B4F9206F02F40067A39A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4806B4F8206F02F40067A39A /* LoginViewController.swift */; };
 		554122E1DB9CB7607C461936 /* Pods_ShareEat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0CB3210ACD2EBFBF3AFB43 /* Pods_ShareEat.framework */; };
+		7D5D9622206F548F00AFA69E /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5D9621206F548F00AFA69E /* DetailsViewController.swift */; };
+		7D5D9624206F64AD00AFA69E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5D9623206F64AD00AFA69E /* ProfileViewController.swift */; };
+		7D5D9626206F78CA00AFA69E /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5D9625206F78CA00AFA69E /* ReviewCell.swift */; };
+		7D5D9628206FA10F00AFA69E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5D9627206FA10F00AFA69E /* MapViewController.swift */; };
+		7D8D65A4206F1368003B06DE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D65A3206F1368003B06DE /* Post.swift */; };
+		7D8D65A6206F17B3003B06DE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D65A5206F17B3003B06DE /* User.swift */; };
+		7D8D65A8206F18B2003B06DE /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D65A7206F18B2003B06DE /* Review.swift */; };
 		E59201397CFEC19F0542D64A /* Pods_ShareEatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F595F7AB8D861249A2699456 /* Pods_ShareEatTests.framework */; };
+		F8C91A9B206F1257000E91FB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91A9A206F1257000E91FB /* HomeViewController.swift */; };
+		F8C91A9F206F2502000E91FB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91A9E206F2502000E91FB /* LoginViewController.swift */; };
+		F8C91AA1206F2509000E91FB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91AA0206F2509000E91FB /* SignUpViewController.swift */; };
+		F8C91AA4206F302F000E91FB /* AddFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91AA3206F302E000E91FB /* AddFoodViewController.swift */; };
+		F8C91AA9206F61B4000E91FB /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91AA8206F61B4000E91FB /* FoodCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +52,6 @@
 		1FB18088122935AEDA51C16E /* Pods-ShareEatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareEatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareEatTests/Pods-ShareEatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4806B4C7206EF9020067A39A /* ShareEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4806B4CA206EF9020067A39A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4806B4CC206EF9020067A39A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4806B4CF206EF9030067A39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4806B4D1206EF9030067A39A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4806B4D4206EF9030067A39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,14 +62,25 @@
 		4806B4E6206EF9030067A39A /* ShareEatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareEatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4806B4EA206EF9030067A39A /* ShareEatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareEatUITests.swift; sourceTree = "<group>"; };
 		4806B4EC206EF9030067A39A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4806B4F8206F02F40067A39A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5CF49DBA9DC48423C275F775 /* Pods-ShareEat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareEat.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareEat/Pods-ShareEat.release.xcconfig"; sourceTree = "<group>"; };
 		72110F6F149E2D510EF8F9B6 /* Pods-ShareEatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareEatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareEatTests/Pods-ShareEatTests.release.xcconfig"; sourceTree = "<group>"; };
+		7D5D9621206F548F00AFA69E /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		7D5D9623206F64AD00AFA69E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		7D5D9625206F78CA00AFA69E /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		7D5D9627206FA10F00AFA69E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		7D8D65A3206F1368003B06DE /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		7D8D65A5206F17B3003B06DE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7D8D65A7206F18B2003B06DE /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		8B0CB3210ACD2EBFBF3AFB43 /* Pods_ShareEat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareEat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A117E1E98B373B5F4F3B0D4E /* Pods-ShareEatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareEatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareEatUITests/Pods-ShareEatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B8D8B7AC22073128E9C52CAA /* Pods-ShareEat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareEat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareEat/Pods-ShareEat.debug.xcconfig"; sourceTree = "<group>"; };
 		CA9796EF04FCDBFB7799E2A9 /* Pods_ShareEatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareEatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F595F7AB8D861249A2699456 /* Pods_ShareEatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareEatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8C91A9A206F1257000E91FB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F8C91A9E206F2502000E91FB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F8C91AA0206F2509000E91FB /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F8C91AA3206F302E000E91FB /* AddFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodViewController.swift; sourceTree = "<group>"; };
+		F8C91AA8206F61B4000E91FB /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,13 +146,14 @@
 		4806B4C9206EF9020067A39A /* ShareEat */ = {
 			isa = PBXGroup;
 			children = (
+				F8C91AA5206F616B000E91FB /* Views */,
+				F8C91AA2206F256C000E91FB /* Model */,
+				F8C91A99206F123E000E91FB /* View Controllers */,
 				4806B4CA206EF9020067A39A /* AppDelegate.swift */,
-				4806B4CC206EF9020067A39A /* ViewController.swift */,
 				4806B4CE206EF9030067A39A /* Main.storyboard */,
 				4806B4D1206EF9030067A39A /* Assets.xcassets */,
 				4806B4D3206EF9030067A39A /* LaunchScreen.storyboard */,
 				4806B4D6206EF9030067A39A /* Info.plist */,
-				4806B4F8206F02F40067A39A /* LoginViewController.swift */,
 			);
 			path = ShareEat;
 			sourceTree = "<group>";
@@ -166,6 +187,39 @@
 				1DB18BD95A566BC260A66873 /* Pods-ShareEatUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F8C91A99206F123E000E91FB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8C91AA0206F2509000E91FB /* SignUpViewController.swift */,
+				F8C91A9E206F2502000E91FB /* LoginViewController.swift */,
+				F8C91A9A206F1257000E91FB /* HomeViewController.swift */,
+				F8C91AA3206F302E000E91FB /* AddFoodViewController.swift */,
+				7D5D9621206F548F00AFA69E /* DetailsViewController.swift */,
+				7D5D9623206F64AD00AFA69E /* ProfileViewController.swift */,
+				7D5D9627206FA10F00AFA69E /* MapViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F8C91AA2206F256C000E91FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7D8D65A3206F1368003B06DE /* Post.swift */,
+				7D8D65A7206F18B2003B06DE /* Review.swift */,
+				7D8D65A5206F17B3003B06DE /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8C91AA5206F616B000E91FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8C91AA8206F61B4000E91FB /* FoodCell.swift */,
+				7D5D9625206F78CA00AFA69E /* ReviewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,12 +503,32 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ShareEat/Pods-ShareEat-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+<<<<<<< HEAD
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+=======
+				"${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/HCSStarRatingView/HCSStarRatingView.framework",
+				"${BUILT_PRODUCTS_DIR}/ImageRow/ImageRow.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/ParseUI/ParseUI.framework",
+>>>>>>> 98f7424c7357eefb95782b26b52b47ba7d5a0017
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+<<<<<<< HEAD
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+=======
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateToolsSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HCSStarRatingView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageRow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParseUI.framework",
+>>>>>>> 98f7424c7357eefb95782b26b52b47ba7d5a0017
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -468,9 +542,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4806B4F9206F02F40067A39A /* LoginViewController.swift in Sources */,
-				4806B4CD206EF9020067A39A /* ViewController.swift in Sources */,
 				4806B4CB206EF9020067A39A /* AppDelegate.swift in Sources */,
+				7D5D9626206F78CA00AFA69E /* ReviewCell.swift in Sources */,
+				7D8D65A6206F17B3003B06DE /* User.swift in Sources */,
+				7D5D9624206F64AD00AFA69E /* ProfileViewController.swift in Sources */,
+				7D5D9622206F548F00AFA69E /* DetailsViewController.swift in Sources */,
+				F8C91A9F206F2502000E91FB /* LoginViewController.swift in Sources */,
+				7D5D9628206FA10F00AFA69E /* MapViewController.swift in Sources */,
+				7D8D65A4206F1368003B06DE /* Post.swift in Sources */,
+				F8C91AA1206F2509000E91FB /* SignUpViewController.swift in Sources */,
+				7D8D65A8206F18B2003B06DE /* Review.swift in Sources */,
+				F8C91AA4206F302F000E91FB /* AddFoodViewController.swift in Sources */,
+				F8C91AA9206F61B4000E91FB /* FoodCell.swift in Sources */,
+				F8C91A9B206F1257000E91FB /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
