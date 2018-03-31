@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F57F4B97A548CFA82D692721C715CB1E"
-               BuildableName = "Pods_ShareEat.framework"
+               BuildableName = "Pods-ShareEat"
                BlueprintName = "Pods-ShareEat"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
@@ -48,7 +48,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F57F4B97A548CFA82D692721C715CB1E"
-            BuildableName = "Pods_ShareEat.framework"
+            BuildableName = "Pods-ShareEat"
             BlueprintName = "Pods-ShareEat"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
