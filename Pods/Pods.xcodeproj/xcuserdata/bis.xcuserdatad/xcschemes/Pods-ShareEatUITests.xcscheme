@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E3D6D0FABC36B1AE2CEA37D48C542690"
-               BuildableName = "Pods-ShareEatUITests"
+               BuildableName = "Pods_ShareEatUITests.framework"
                BlueprintName = "Pods-ShareEatUITests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
@@ -48,7 +48,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E3D6D0FABC36B1AE2CEA37D48C542690"
-            BuildableName = "Pods-ShareEatUITests"
+            BuildableName = "Pods_ShareEatUITests.framework"
             BlueprintName = "Pods-ShareEatUITests"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>

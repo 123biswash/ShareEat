@@ -1,14 +1,7 @@
-<<<<<<< HEAD
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Bolts" "${PODS_CONFIGURATION_BUILD_DIR}/Parse"
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/Bolts/Bolts.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/Parse/Parse.framework/Headers"
-=======
 FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Bolts" "${PODS_CONFIGURATION_BUILD_DIR}/DateToolsSwift" "${PODS_CONFIGURATION_BUILD_DIR}/Eureka" "${PODS_CONFIGURATION_BUILD_DIR}/HCSStarRatingView" "${PODS_CONFIGURATION_BUILD_DIR}/ImageRow" "${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD" "${PODS_CONFIGURATION_BUILD_DIR}/Parse" "${PODS_CONFIGURATION_BUILD_DIR}/ParseUI"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
 OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/Bolts/Bolts.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/DateToolsSwift/DateToolsSwift.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/Eureka/Eureka.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/HCSStarRatingView/HCSStarRatingView.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/ImageRow/ImageRow.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD/MBProgressHUD.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/Parse/Parse.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/ParseUI/ParseUI.framework/Headers"
->>>>>>> 98f7424c7357eefb95782b26b52b47ba7d5a0017
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
