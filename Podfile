@@ -4,12 +4,12 @@
 target 'ShareEat' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-
+  pod 'Parse'
   # Pods for ShareEat
 
   target 'ShareEatTests' do
     inherit! :search_paths
-    pod 'Parse'
+    
     # Pods for testing
   end
 
