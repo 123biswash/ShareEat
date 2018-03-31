@@ -25,7 +25,10 @@ class DetailsViewController: UIViewController {
     
     var post: Post!
     
+    var sellerLocation: String! = nil
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
        buyButton.layer.borderWidth = 0.5
@@ -34,7 +37,7 @@ class DetailsViewController: UIViewController {
         buyButton.layer.backgroundColor = UIColor(red: 0, green: 0.5, blue: 1, alpha: 0.9).cgColor
         buyButton.setTitleColor(UIColor(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
         
-        chefImageView.layer.cornerRadius = 10
+        chefImageView.layer.cornerRadius = 45
 
         // Do any additional setup after loading the view.
         loadDetailView()
@@ -47,6 +50,7 @@ class DetailsViewController: UIViewController {
         foodDetailDescriptionLabel.text = post.foodDescription
         timeSincePostLabel.text = post.createdAt?.shortTimeAgoSinceNow
         categoryLabel.text = post.foodCategory
+        print("loading")
         getProfileInfo(user: post.author)
     }
     
@@ -59,13 +63,22 @@ class DetailsViewController: UIViewController {
                 print(error)
             } else if let object = userObject {
                 self.chefNameLabel.text = userObject!["name"] as! String
-                if let profile_url = userObject!["profile_url"] {
+                print(userObject)
+                let sellLocation = userObject!["address"] as! String
+                
+                self.sellerLocation = sellLocation
+                
+                //print("Location")
+                
+                if let profile_url = userObject!["profile_img"] {
                     self.chefImageView.file = profile_url as! PFFile
+                    self.chefImageView.loadInBackground()
                 }
             }
         }
 
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -75,9 +88,16 @@ class DetailsViewController: UIViewController {
     }
     
     @IBAction func didPressBuy(_ sender: Any) {
-        
+        if sellerLocation != nil {
+            performSegue(withIdentifier: "sendLocation", sender: nil)
+        }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let mapVC = segue.destination as! MapViewController
+        mapVC.location = sellerLocation
+    }
+  
     /*
     // MARK: - Navigation
 

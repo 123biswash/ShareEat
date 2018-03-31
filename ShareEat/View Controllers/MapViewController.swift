@@ -20,7 +20,17 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var mapKitView: WKWebView!
     let locationManager = CLLocationManager()
     
+    var location: String!
+    var window: UIWindow!
+    
     override func viewDidLoad() {
+        
+        confirmButton.layer.backgroundColor = UIColor(red: 0, green: 0.5, blue: 1, alpha: 0.9).cgColor
+        confirmButton.setTitleColor(UIColor(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
+        
+        cancelButton.layer.backgroundColor = UIColor(red: 1, green: 0.5, blue: 0, alpha: 0.9).cgColor
+        cancelButton.setTitleColor(UIColor(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
+        
         super.viewDidLoad()
         locationManager.requestWhenInUseAuthorization()
         if CLLocationManager.locationServicesEnabled() {
@@ -55,7 +65,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             print (locValue)
         
             var geocoder = CLGeocoder()
-            geocoder.geocodeAddressString("1600 Pennsylvania Ave NW, Washington, DC 20500") {
+            geocoder.geocodeAddressString(location) {
                 placemarks, error in
                 let placemark = placemarks?.first
                 sellerLat = (placemark?.location?.coordinate.latitude)!
@@ -90,7 +100,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     
     @IBAction func didTapCancel(_ sender: Any) {
-         self.dismiss(animated: true, completion: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        // view controller currently being set in Storyboard as default will be overridden
+        self.navigationController?.popViewController(animated: true)
     }
     /*
     // MARK: - Navigation

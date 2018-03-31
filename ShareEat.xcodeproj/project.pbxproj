@@ -28,6 +28,7 @@
 		F8C91AA1206F2509000E91FB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91AA0206F2509000E91FB /* SignUpViewController.swift */; };
 		F8C91AA4206F302F000E91FB /* AddFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91AA3206F302E000E91FB /* AddFoodViewController.swift */; };
 		F8C91AA9206F61B4000E91FB /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91AA8206F61B4000E91FB /* FoodCell.swift */; };
+		F8C91AAC206FE27F000E91FB /* FoodWaitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91AAB206FE27F000E91FB /* FoodWaitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		F8C91AA0206F2509000E91FB /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F8C91AA3206F302E000E91FB /* AddFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodViewController.swift; sourceTree = "<group>"; };
 		F8C91AA8206F61B4000E91FB /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
+		F8C91AAB206FE27F000E91FB /* FoodWaitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodWaitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 				7D5D9621206F548F00AFA69E /* DetailsViewController.swift */,
 				7D5D9623206F64AD00AFA69E /* ProfileViewController.swift */,
 				7D5D9627206FA10F00AFA69E /* MapViewController.swift */,
+				F8C91AAB206FE27F000E91FB /* FoodWaitViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -539,6 +542,7 @@
 				7D8D65A6206F17B3003B06DE /* User.swift in Sources */,
 				7D5D9624206F64AD00AFA69E /* ProfileViewController.swift in Sources */,
 				7D5D9622206F548F00AFA69E /* DetailsViewController.swift in Sources */,
+				F8C91AAC206FE27F000E91FB /* FoodWaitViewController.swift in Sources */,
 				F8C91A9F206F2502000E91FB /* LoginViewController.swift in Sources */,
 				7D5D9628206FA10F00AFA69E /* MapViewController.swift in Sources */,
 				7D8D65A4206F1368003B06DE /* Post.swift in Sources */,
