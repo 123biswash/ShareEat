@@ -18,6 +18,7 @@
 		554122E1DB9CB7607C461936 /* Pods_ShareEat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0CB3210ACD2EBFBF3AFB43 /* Pods_ShareEat.framework */; };
 		E59201397CFEC19F0542D64A /* Pods_ShareEatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F595F7AB8D861249A2699456 /* Pods_ShareEatTests.framework */; };
 		F8C91A97206F0BE7000E91FB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91A96206F0BE7000E91FB /* SignUpViewController.swift */; };
+		F8C91A9B206F1257000E91FB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91A9A206F1257000E91FB /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		CA9796EF04FCDBFB7799E2A9 /* Pods_ShareEatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareEatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F595F7AB8D861249A2699456 /* Pods_ShareEatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareEatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C91A96206F0BE7000E91FB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F8C91A9A206F1257000E91FB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,13 +128,12 @@
 		4806B4C9206EF9020067A39A /* ShareEat */ = {
 			isa = PBXGroup;
 			children = (
+				F8C91A99206F123E000E91FB /* View Controllers */,
 				4806B4CA206EF9020067A39A /* AppDelegate.swift */,
 				4806B4CE206EF9030067A39A /* Main.storyboard */,
 				4806B4D1206EF9030067A39A /* Assets.xcassets */,
 				4806B4D3206EF9030067A39A /* LaunchScreen.storyboard */,
 				4806B4D6206EF9030067A39A /* Info.plist */,
-				4806B4F8206F02F40067A39A /* LoginViewController.swift */,
-				F8C91A96206F0BE7000E91FB /* SignUpViewController.swift */,
 			);
 			path = ShareEat;
 			sourceTree = "<group>";
@@ -166,6 +167,16 @@
 				1DB18BD95A566BC260A66873 /* Pods-ShareEatUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F8C91A99206F123E000E91FB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4806B4F8206F02F40067A39A /* LoginViewController.swift */,
+				F8C91A96206F0BE7000E91FB /* SignUpViewController.swift */,
+				F8C91A9A206F1257000E91FB /* HomeViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -471,6 +482,7 @@
 				F8C91A97206F0BE7000E91FB /* SignUpViewController.swift in Sources */,
 				4806B4F9206F02F40067A39A /* LoginViewController.swift in Sources */,
 				4806B4CB206EF9020067A39A /* AppDelegate.swift in Sources */,
+				F8C91A9B206F1257000E91FB /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
