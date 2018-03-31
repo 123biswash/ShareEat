@@ -10,10 +10,17 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var addFoodButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        addFoodButton.layer.borderWidth = 0.5
+        addFoodButton.layer.borderColor = UIColor(red: 0, green: 0, blue: 1, alpha: 0.5).cgColor
         // Do any additional setup after loading the view.
+        addFoodButton.layer.backgroundColor = UIColor(red: 0, green: 0.5, blue: 1, alpha: 0.9).cgColor
+        addFoodButton.setTitleColor(UIColor(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
+        
     }
 
     override func didReceiveMemoryWarning() {
