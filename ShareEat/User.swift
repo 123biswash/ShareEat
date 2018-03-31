@@ -7,7 +7,22 @@
 //
 
 import UIKit
+import Parse
 
-class User: PFObject {
+class User: PFObject, PFSubclassing {
+    //MARK: Properties
+    @NSManaged var address: String
+    @NSManaged var userName:String
+    @NSManaged var userEmail: String
+    @NSManaged var userPhoneNum: String
+    @NSManaged var profilePicture: PFFile
+    @NSManaged var rating: Double
+    @NSManaged var reviews: [Review]
 
+    /* Needed to implement PFSubclassing interface */
+    class func parseClassName() -> String {
+        return "User"
+    }
+    
+    
 }

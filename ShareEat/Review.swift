@@ -9,5 +9,17 @@
 import UIKit
 
 class Review: PFObject {
+    //MARK: Properties
+    @NSManaged var ratingsCounts: Int
+    @NSManaged var reviewDescription: String
+    
+    /* Needed to implement PFSubclassing interface */
+    class func parseClassName() -> String {
+        return "Review"
+    }
+    
+    
+    //MARK: Initialization
+    
 
 }
