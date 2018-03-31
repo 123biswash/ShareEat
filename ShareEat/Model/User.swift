@@ -19,10 +19,14 @@ class User: PFObject, PFSubclassing {
     @NSManaged var rating: Double
     var reviews: [Review] = []
 
+
+
     /* Needed to implement PFSubclassing interface */
     class func parseClassName() -> String {
         return "User"
     }
+    
+    
     
     
 }
