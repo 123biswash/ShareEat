@@ -38,13 +38,15 @@ class Post: PFObject, PFSubclassing{
         let post = Post()
         
         let food_image = dict!["image"]
+        let resized_image = resizeImage(image: food_image as! UIImage, newWidth: 500)
+        
         let food_price = dict!["price"]
         let foodDescription = dict!["description"]
         let servingSizes = dict!["serving_size"]
         let foodCategory = dict!["food_type"]
         let foodName = dict!["food_name"]
         // Add relevant fields to the object
-        post.foodPicture = getPFFileFromImage(image: food_image as? UIImage)
+        post.foodPicture = getPFFileFromImage(image: resized_image as? UIImage)
         post.author = PFUser.current()! // Pointer column type that points to PFUser
         post.foodDescription = foodDescription! as! String
         //post.cookedTime = cookedTime!
@@ -69,6 +71,21 @@ class Post: PFObject, PFSubclassing{
     
         // Save object (following function will save the object in Parse asynchronously)
         post.saveInBackground(block: completion)
+    }
+    
+    class func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage {
+        
+        let scale = newWidth / image.size.width
+        let newHeight = image.size.height * scale
+        
+        UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight))
+        
+        
+        image.draw(in: CGRect(x: 0, y: 0,width: newWidth, height: newHeight))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return newImage!
     }
     
     /**

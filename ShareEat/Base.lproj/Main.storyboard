@@ -289,7 +289,7 @@
                             <constraint firstItem="YQ2-OQ-Gm8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vXe-fm-ify" secondAttribute="leading" constant="8" id="4Qj-rx-xch"/>
                             <constraint firstItem="vXe-fm-ify" firstAttribute="trailing" secondItem="lfE-mk-3un" secondAttribute="trailing" constant="178" id="72y-QV-G6I"/>
                             <constraint firstItem="sFM-9X-Hrs" firstAttribute="top" secondItem="YQ2-OQ-Gm8" secondAttribute="bottom" constant="9" id="7JF-Ye-EJK"/>
-                            <constraint firstItem="vXe-fm-ify" firstAttribute="trailing" secondItem="zZ8-by-50Z" secondAttribute="trailing" constant="147" id="Ayk-wG-Adz"/>
+                            <constraint firstItem="vXe-fm-ify" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zZ8-by-50Z" secondAttribute="trailing" constant="8" id="Ayk-wG-Adz"/>
                             <constraint firstItem="vXe-fm-ify" firstAttribute="trailing" secondItem="eLd-lO-bwG" secondAttribute="trailing" constant="147" id="BhF-4a-hqu"/>
                             <constraint firstItem="zZ8-by-50Z" firstAttribute="leading" secondItem="vXe-fm-ify" secondAttribute="leading" constant="148" id="DtQ-JQ-FLY"/>
                             <constraint firstItem="uBW-C4-dkv" firstAttribute="top" secondItem="vXe-fm-ify" secondAttribute="top" constant="137" id="G4K-z5-TN8"/>

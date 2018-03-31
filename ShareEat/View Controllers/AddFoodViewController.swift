@@ -68,7 +68,7 @@ class AddFoodViewController: FormViewController {
             }
             <<< ImageRow("image") { row in
                 row.title = "Food\nimage"
-                row.sourceTypes = [.PhotoLibrary, .SavedPhotosAlbum]
+                row.sourceTypes = [.PhotoLibrary, .SavedPhotosAlbum, .Camera]
                 row.clearAction = .yes(style: UIAlertActionStyle.destructive)
             }.cellSetup({ (cell, row) -> () in
                     row.cell.height = {
