@@ -1,5 +1,5 @@
 //
-//  FoodWaitViewController.swift
+//  ConfirmedViewController.swift
 //  ShareEat
 //
 //  Created by Anish Adhikari on 3/31/18.
@@ -7,23 +7,14 @@
 //
 
 import UIKit
-import MapKit
-import WebKit
 
-class FoodWaitViewController: UIViewController {
+class ConfirmedViewController: UIViewController {
 
-    @IBOutlet weak var mapView: WKWebView!
-    
-    var window: UIWindow?
-    
-    @IBOutlet weak var cancelButton: UIButton!
+    @IBOutlet weak var submitButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        cancelButton.layer.backgroundColor = UIColor(red: 1, green: 0.5, blue: 0, alpha: 0.9).cgColor
-        cancelButton.setTitleColor(UIColor(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,10 +23,6 @@ class FoodWaitViewController: UIViewController {
     }
     
 
-    @IBAction func cancelView(_ sender: Any) {
-        var mainViewController = self.window!.rootViewController as! HomeViewController
-        let mapViewController  = mainViewController.presentedViewController
-    }
     /*
     // MARK: - Navigation
 

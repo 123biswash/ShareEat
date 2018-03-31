@@ -39,15 +39,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "AuthenticatedViewController")
         }
         
-        Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(self.onTimer), userInfo: nil, repeats: true)
-        
         // Override point for customization after application launch.
         return true
     }
     
-    @objc func onTimer() {
-        print("timer tick")
-    }
     
     func logOut() {
         // Logout the current user

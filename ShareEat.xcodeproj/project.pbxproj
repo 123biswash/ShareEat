@@ -29,6 +29,7 @@
 		F8C91AA4206F302F000E91FB /* AddFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91AA3206F302E000E91FB /* AddFoodViewController.swift */; };
 		F8C91AA9206F61B4000E91FB /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91AA8206F61B4000E91FB /* FoodCell.swift */; };
 		F8C91AAC206FE27F000E91FB /* FoodWaitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91AAB206FE27F000E91FB /* FoodWaitViewController.swift */; };
+		F8C91AB3206FEA4A000E91FB /* ConfirmedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91AB2206FEA4A000E91FB /* ConfirmedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		7D5D9623206F64AD00AFA69E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7D5D9625206F78CA00AFA69E /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 		7D5D9627206FA10F00AFA69E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		7D5D9629206FDCD200AFA69E /* ConfirmedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmedViewController.swift; sourceTree = "<group>"; };
 		7D8D65A3206F1368003B06DE /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		7D8D65A5206F17B3003B06DE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7D8D65A7206F18B2003B06DE /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		F8C91AA3206F302E000E91FB /* AddFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodViewController.swift; sourceTree = "<group>"; };
 		F8C91AA8206F61B4000E91FB /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
 		F8C91AAB206FE27F000E91FB /* FoodWaitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodWaitViewController.swift; sourceTree = "<group>"; };
+		F8C91AB2206FEA4A000E91FB /* ConfirmedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,7 @@
 				4806B4C8206EF9020067A39A /* Products */,
 				F4938714B539935F50D4B287 /* Pods */,
 				2E4ED979B438B0E3FCFEEC94 /* Frameworks */,
+				F8C91AAF206FE7F0000E91FB /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -202,6 +206,7 @@
 				7D5D9623206F64AD00AFA69E /* ProfileViewController.swift */,
 				7D5D9627206FA10F00AFA69E /* MapViewController.swift */,
 				F8C91AAB206FE27F000E91FB /* FoodWaitViewController.swift */,
+				F8C91AB2206FEA4A000E91FB /* ConfirmedViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -223,6 +228,14 @@
 				7D5D9625206F78CA00AFA69E /* ReviewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F8C91AAF206FE7F0000E91FB /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				7D5D9629206FDCD200AFA69E /* ConfirmedViewController.swift */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -506,9 +519,9 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ShareEat/Pods-ShareEat-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
-				"${BUILT_PRODUCTS_DIR}/HCSStarRatingView/HCSStarRatingView.framework",
 				"${BUILT_PRODUCTS_DIR}/ImageRow/ImageRow.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
@@ -517,9 +530,9 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateToolsSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HCSStarRatingView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageRow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
@@ -550,6 +563,7 @@
 				7D8D65A8206F18B2003B06DE /* Review.swift in Sources */,
 				F8C91AA4206F302F000E91FB /* AddFoodViewController.swift in Sources */,
 				F8C91AA9206F61B4000E91FB /* FoodCell.swift in Sources */,
+				F8C91AB3206FEA4A000E91FB /* ConfirmedViewController.swift in Sources */,
 				F8C91A9B206F1257000E91FB /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -718,6 +732,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6JTJHCFQH8;
 				INFOPLIST_FILE = ShareEat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = s.ShareEat;
@@ -733,6 +748,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6JTJHCFQH8;
 				INFOPLIST_FILE = ShareEat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = s.ShareEat;

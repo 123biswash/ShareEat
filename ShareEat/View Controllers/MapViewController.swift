@@ -20,6 +20,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var mapKitView: WKWebView!
     let locationManager = CLLocationManager()
     
+    var s_user: PFUser!
+    
     var location: String!
     var window: UIWindow!
     
@@ -36,21 +38,67 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         if CLLocationManager.locationServicesEnabled() {
                 locationManager.delegate = self
                 locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
-                self.performUrlOperation()
+                self.performPostCompletion()
             }
             else{
                 print("Location service disabled");
             }
-        }
+        
+            performPostCompletion()
+        
+        performUrlOperation()
+    }
+
     
         
 
+    func performPostCompletion() {
+        let user = s_user
+        let id = user?.objectId!
+
+        let object = PFObject(withoutDataWithClassName: "Post", objectId: id)
+        object["completed"] = "true"
+        object.saveInBackground { (success: Bool, error: Error?) in
+            if success {
+                print("saved completion")
+                
+            } else {
+                print("Error")
+            }
+        }
+    }
+    
+//    func postImageToParse(image: UIImage) {
+//
+//        if image != nil {
+//            MBProgressHUD.showAdded(to: self.view, animated: true)
+//            //post image to parse
+//            print("post Image to parse")
+//            //
+//            let id = user.objectId!
+//            let object = PFObject(withoutDataWithClassName: "_User", objectId: id)
+//            object["profile_img"] = getPFFileFromImage(image: image)
+//            object.saveInBackground(block: { (success: Bool, error: Error?) in
+//                if success {
+//                    print("saved image")
+//                    MBProgressHUD.hide(for: self.view, animated: true)
+//                } else {
+//                    print("Error")
+//                }
+//            })
+//
+//
+//        }
+//    }
+//
         // Do any additional setup after loading the view.
    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
     
     func performUrlOperation() {
             var locValue:CLLocation = locationManager.location!
@@ -74,17 +122,16 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                 
                 self.url = "https://www.google.com/maps/dir/\(lat),\(long)/\(sellerLat),\(sellerLng)"
                 
+                
+                
                 self.loadUrlWebView()
                 
                 print(self.url)
             }
         
-        
-        
     }
     
-    
-    
+
     
     func loadUrlWebView() {
         let requestURL = URL(string:url)
@@ -100,7 +147,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     
     @IBAction func didTapCancel(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
         // view controller currently being set in Storyboard as default will be overridden
         self.navigationController?.popViewController(animated: true)
     }

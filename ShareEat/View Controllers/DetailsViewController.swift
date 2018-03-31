@@ -8,7 +8,6 @@
 
 import UIKit
 import ParseUI
-import HCSStarRatingView
 import DateToolsSwift
 
 class DetailsViewController: UIViewController {
@@ -96,6 +95,7 @@ class DetailsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let mapVC = segue.destination as! MapViewController
         mapVC.location = sellerLocation
+        mapVC.s_user = self.post.author
     }
   
     /*

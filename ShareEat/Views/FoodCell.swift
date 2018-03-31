@@ -33,13 +33,38 @@ class FoodCell: UITableViewCell {
             let date = post.createdAt
             timeLabel.text = date?.timeAgoSinceNow
             foodPriceLabel.text =  "$\(post.price)"
+            
+            getProfileInfo(user: post.author)
         }
     }
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         // Initialization code
         userProfileImage.layer.cornerRadius = 40
+        
+        
+    }
+    
+    func getProfileInfo(user: PFUser) {
+        let id = user.objectId!
+        let query = PFQuery(className:"_User")
+        query.getObjectInBackground(withId: id) {
+            (userObject: PFObject?, error: Error?) -> Void in
+            if error != nil {
+                print(error)
+            } else if let object = userObject {
+                
+                //print("Location")
+                
+                if let profile_url = userObject!["profile_img"] {
+                    self.userProfileImage.file = profile_url as! PFFile
+                    self.userProfileImage.loadInBackground()
+                }
+            }
+        }
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
