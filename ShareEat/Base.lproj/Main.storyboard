@@ -331,11 +331,8 @@
                     <navigationItem key="navigationItem" title="Home" id="XRS-HT-UWk"/>
                     <connections>
                         <outlet property="addFoodButton" destination="1zu-hk-CaZ" id="IW1-RP-CbU"/>
-
                         <outlet property="tableView" destination="Knm-wE-MZ9" id="8QK-UM-U0D"/>
-
                         <segue destination="61L-DF-Kxl" kind="show" identifier="foodDetailSegue" id="ZXy-Hx-hoQ"/>
-
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7gj-oB-CuC" userLabel="First Responder" sceneMemberID="firstResponder"/>
