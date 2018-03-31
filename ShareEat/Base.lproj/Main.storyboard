@@ -216,11 +216,122 @@
                     <navigationItem key="navigationItem" title="Home" id="XRS-HT-UWk"/>
                     <connections>
                         <outlet property="addFoodButton" destination="1zu-hk-CaZ" id="IW1-RP-CbU"/>
+                        <segue destination="61L-DF-Kxl" kind="show" identifier="foodDetailSegue" id="ZXy-Hx-hoQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7gj-oB-CuC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2674" y="129"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="On3-0s-Vma">
+            <objects>
+                <viewController id="61L-DF-Kxl" customClass="DetailsViewController" customModule="ShareEat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="epI-H7-pct">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iX5-pu-rXZ">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X8M-PN-q6I">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="623"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QqH-a8-LPF">
+                                                <rect key="frame" x="8" y="19" width="94" height="96"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Anish Adhikari" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRM-zA-ZI7">
+                                                <rect key="frame" x="137" y="19" width="157" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hp6-Bv-6ZL">
+                                                <rect key="frame" x="137" y="57" width="49" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Taco De Salsa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJQ-Bv-ijx">
+                                                <rect key="frame" x="27" y="204" width="137" height="26"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Bv-Qt-Lgf">
+                                                <rect key="frame" x="27" y="368" width="337" height="184"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfg-1G-MzV">
+                                                <rect key="frame" x="41" y="585" width="323" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="BUY"/>
+                                                <connections>
+                                                    <action selector="didPressBuy:" destination="61L-DF-Kxl" eventType="touchUpInside" id="gr7-zn-8uv"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No. of Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dm-qs-501">
+                                                <rect key="frame" x="137" y="91" width="114" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="32 minutes ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXQ-4I-K1J">
+                                                <rect key="frame" x="245" y="204" width="119" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Homemade Taco. Really great!! Pure Mexican Flavor. You would love the food I have cooked." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCo-5M-FkQ">
+                                                <rect key="frame" x="27" y="250" width="337" height="99"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="X8M-PN-q6I" secondAttribute="bottom" id="DXU-rr-C3g"/>
+                                    <constraint firstItem="X8M-PN-q6I" firstAttribute="centerY" secondItem="iX5-pu-rXZ" secondAttribute="centerY" id="Qzz-E9-d5D"/>
+                                    <constraint firstItem="X8M-PN-q6I" firstAttribute="leading" secondItem="iX5-pu-rXZ" secondAttribute="leading" id="YeW-SW-77f"/>
+                                    <constraint firstAttribute="trailing" secondItem="X8M-PN-q6I" secondAttribute="trailing" id="eRl-sV-eFe"/>
+                                    <constraint firstItem="X8M-PN-q6I" firstAttribute="centerX" secondItem="iX5-pu-rXZ" secondAttribute="centerX" id="nLC-kk-tNq"/>
+                                    <constraint firstItem="X8M-PN-q6I" firstAttribute="top" secondItem="iX5-pu-rXZ" secondAttribute="top" id="yg3-cU-S2n"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iX5-pu-rXZ" firstAttribute="trailing" secondItem="l5U-5G-Hwd" secondAttribute="trailing" id="0ro-Wd-mpx"/>
+                            <constraint firstItem="iX5-pu-rXZ" firstAttribute="bottom" secondItem="l5U-5G-Hwd" secondAttribute="bottom" id="9es-wN-1dY"/>
+                            <constraint firstItem="iX5-pu-rXZ" firstAttribute="top" secondItem="l5U-5G-Hwd" secondAttribute="top" id="poE-TL-cVW"/>
+                            <constraint firstItem="iX5-pu-rXZ" firstAttribute="leading" secondItem="l5U-5G-Hwd" secondAttribute="leading" id="rrv-LP-1K9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="l5U-5G-Hwd"/>
+                    </view>
+                    <connections>
+                        <outlet property="buyButton" destination="Qfg-1G-MzV" id="bcf-DY-Fzi"/>
+                        <outlet property="chefImageView" destination="QqH-a8-LPF" id="7Lv-ls-907"/>
+                        <outlet property="chefNameLabel" destination="fRM-zA-ZI7" id="aQS-kQ-wcH"/>
+                        <outlet property="foodDetailDescriptionLabel" destination="cCo-5M-FkQ" id="ydy-SG-FEs"/>
+                        <outlet property="foodImageView" destination="7Bv-Qt-Lgf" id="SYn-NT-qZ7"/>
+                        <outlet property="foodNameLabel" destination="cJQ-Bv-ijx" id="lCp-be-Ee2"/>
+                        <outlet property="reviewsCountLabel" destination="4Dm-qs-501" id="btH-wY-SgQ"/>
+                        <outlet property="timeSincePostLabel" destination="kXQ-4I-K1J" id="WFo-pg-7aR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LYN-nC-zPc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3576.811594202899" y="114.94565217391305"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="1HE-5S-4sg">
