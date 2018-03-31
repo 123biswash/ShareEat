@@ -47,10 +47,26 @@ class DetailsViewController: UIViewController {
         foodDetailDescriptionLabel.text = post.foodDescription
         timeSincePostLabel.text = post.createdAt?.shortTimeAgoSinceNow
         categoryLabel.text = post.foodCategory
-        
-        
-        
+        getProfileInfo(user: post.author)
     }
+    
+    func getProfileInfo(user: PFUser) {
+        let id = user.objectId!
+        let query = PFQuery(className:"_User")
+        query.getObjectInBackground(withId: id) {
+            (userObject: PFObject?, error: Error?) -> Void in
+            if error != nil {
+                print(error)
+            } else if let object = userObject {
+                self.chefNameLabel.text = userObject!["name"] as! String
+                if let profile_url = userObject!["profile_url"] {
+                    self.chefImageView.file = profile_url as! PFFile
+                }
+            }
+        }
+
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
