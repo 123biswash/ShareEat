@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class LoginViewController: UIViewController {
 
@@ -66,7 +67,40 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onSignIn(_ sender: Any) {
+        
+        self.activityIndicator.startAnimating()
+        let username = userNameField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password = passwordField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+        if (username?.isEmpty)! {
+            presentAlert(msg: "Phone Required", description: "Please enter your Phone number and password")
+        } else if (password?.isEmpty)! {
+            presentAlert(msg: "Password Required", description: "Please enter your Phone number and password")
+        }
+        
+        PFUser.logInWithUsername(inBackground: username!, password: password!) { (user: PFUser?, error: Error?) in
+            if user != nil {
+                print("User succesfully logged in")
+                self.performSegue(withIdentifier: "logInSegue", sender: nil)
+            } else {
+                self.userNameField.text = ""
+                self.passwordField.text = ""
+                let errorString =  error?.localizedDescription
+                self.presentAlert(msg: "Login Failed", description: errorString!)
+            }
+            self.activityIndicator.stopAnimating()
+        }
+    
+    }
 
+    func presentAlert(msg: String, description: String) {
+        let alertController = UIAlertController(title: msg, message: description, preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        alertController.addAction(cancelAction)
+        present(alertController, animated: true)
+    }
+    
+    
     /*
     // MARK: - Navigation
 
