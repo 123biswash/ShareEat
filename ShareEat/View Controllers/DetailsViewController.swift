@@ -8,7 +8,6 @@
 
 import UIKit
 import ParseUI
-import HCSStarRatingView
 import DateToolsSwift
 
 class DetailsViewController: UIViewController {
