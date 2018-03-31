@@ -19,7 +19,8 @@ class Post: PFObject, PFSubclassing{
     @NSManaged var foodDescription: String
     @NSManaged var servingSize: Int
     @NSManaged var foodCategory: String
-    
+    @NSManaged var price: String
+
      /* Needed to implement PFSubclassing interface */
     class func parseClassName() -> String {
         return "Post"
@@ -37,6 +38,7 @@ class Post: PFObject, PFSubclassing{
         let post = Post()
         
         let food_image = dict!["image"]
+        let food_price = dict!["price"]
         let foodDescription = dict!["description"]
         let servingSizes = dict!["serving_size"]
         let foodCategory = dict!["food_type"]
@@ -61,10 +63,10 @@ class Post: PFObject, PFSubclassing{
             post.servingSize = 1
         }
         
+        post.price = food_price! as! String
         post.foodCategory = foodCategory! as! String
         post.foodName = foodName! as! String
-        
-        
+    
         // Save object (following function will save the object in Parse asynchronously)
         post.saveInBackground(block: completion)
     }

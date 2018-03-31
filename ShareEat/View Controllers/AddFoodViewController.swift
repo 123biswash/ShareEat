@@ -46,6 +46,15 @@ class AddFoodViewController: FormViewController {
                     $0.options = ["One","Two","Three", "Four", "Five"]
                     $0.value = "One"    // initially selected
             }
+            
+            +++ Section("Price") { section in
+                section.header?.height = { 10 }
+                section.footer?.height = { 10 }
+            }
+            <<< TextRow("price") { row in
+                row.title = "$"
+                row.placeholder = "Price $$$"
+            }
             +++ Section("Description") { section in
                 section.header?.height = { 10 }
                 section.footer?.height = { 10 }
@@ -96,7 +105,7 @@ class AddFoodViewController: FormViewController {
                 print("post error")
                 self.presentAlert(msg: "Post Error", description: (error?.localizedDescription)!)
             }
-            self.dismiss(animated: true, completion: nil)
+            self.navigationController?.popViewController(animated: true)
         }
     }
     

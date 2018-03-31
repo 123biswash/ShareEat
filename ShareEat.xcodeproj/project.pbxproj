@@ -23,6 +23,7 @@
 		F8C91A9F206F2502000E91FB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91A9E206F2502000E91FB /* LoginViewController.swift */; };
 		F8C91AA1206F2509000E91FB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91AA0206F2509000E91FB /* SignUpViewController.swift */; };
 		F8C91AA4206F302F000E91FB /* AddFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91AA3206F302E000E91FB /* AddFoodViewController.swift */; };
+		F8C91AA9206F61B4000E91FB /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C91AA8206F61B4000E91FB /* FoodCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		F8C91A9E206F2502000E91FB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F8C91AA0206F2509000E91FB /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F8C91AA3206F302E000E91FB /* AddFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodViewController.swift; sourceTree = "<group>"; };
+		F8C91AA8206F61B4000E91FB /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 		4806B4C9206EF9020067A39A /* ShareEat */ = {
 			isa = PBXGroup;
 			children = (
+				F8C91AA5206F616B000E91FB /* Views */,
 				F8C91AA2206F256C000E91FB /* Model */,
 				F8C91A99206F123E000E91FB /* View Controllers */,
 				4806B4CA206EF9020067A39A /* AppDelegate.swift */,
@@ -197,6 +200,14 @@
 				7D8D65A5206F17B3003B06DE /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F8C91AA5206F616B000E91FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8C91AA8206F61B4000E91FB /* FoodCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -480,16 +491,22 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ShareEat/Pods-ShareEat-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/ImageRow/ImageRow.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/ParseUI/ParseUI.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateToolsSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageRow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParseUI.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -510,6 +527,7 @@
 				F8C91AA1206F2509000E91FB /* SignUpViewController.swift in Sources */,
 				7D8D65A8206F18B2003B06DE /* Review.swift in Sources */,
 				F8C91AA4206F302F000E91FB /* AddFoodViewController.swift in Sources */,
+				F8C91AA9206F61B4000E91FB /* FoodCell.swift in Sources */,
 				F8C91A9B206F1257000E91FB /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
