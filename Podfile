@@ -12,7 +12,7 @@ target 'ShareEat' do
   pod 'ParseUI'
   pod 'MBProgressHUD'
   pod 'DateToolsSwift'
-  pod 'HCSStarRatingView', '~> 1.5'
+  pod 'Cosmos', '~> 15.0'
  
   target 'ShareEatTests' do
     inherit! :search_paths
