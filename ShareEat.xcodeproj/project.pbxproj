@@ -14,6 +14,7 @@
 		4806B4D5206EF9030067A39A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4806B4D3206EF9030067A39A /* LaunchScreen.storyboard */; };
 		4806B4E0206EF9030067A39A /* ShareEatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4806B4DF206EF9030067A39A /* ShareEatTests.swift */; };
 		4806B4EB206EF9030067A39A /* ShareEatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4806B4EA206EF9030067A39A /* ShareEatUITests.swift */; };
+		4846BCC5206F31DE00ADA865 /* animateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846BCC4206F31DE00ADA865 /* animateViewController.swift */; };
 		554122E1DB9CB7607C461936 /* Pods_ShareEat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0CB3210ACD2EBFBF3AFB43 /* Pods_ShareEat.framework */; };
 		7D8D65A4206F1368003B06DE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D65A3206F1368003B06DE /* Post.swift */; };
 		7D8D65A6206F17B3003B06DE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D65A5206F17B3003B06DE /* User.swift */; };
@@ -56,6 +57,7 @@
 		4806B4E6206EF9030067A39A /* ShareEatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareEatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4806B4EA206EF9030067A39A /* ShareEatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareEatUITests.swift; sourceTree = "<group>"; };
 		4806B4EC206EF9030067A39A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4846BCC4206F31DE00ADA865 /* animateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animateViewController.swift; sourceTree = "<group>"; };
 		5CF49DBA9DC48423C275F775 /* Pods-ShareEat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareEat.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareEat/Pods-ShareEat.release.xcconfig"; sourceTree = "<group>"; };
 		72110F6F149E2D510EF8F9B6 /* Pods-ShareEatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareEatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareEatTests/Pods-ShareEatTests.release.xcconfig"; sourceTree = "<group>"; };
 		7D8D65A3206F1368003B06DE /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				F8C91AA0206F2509000E91FB /* SignUpViewController.swift */,
 				F8C91A9E206F2502000E91FB /* LoginViewController.swift */,
 				F8C91A9A206F1257000E91FB /* HomeViewController.swift */,
+				4846BCC4206F31DE00ADA865 /* animateViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -502,6 +505,7 @@
 				7D8D65A6206F17B3003B06DE /* User.swift in Sources */,
 				F8C91A9F206F2502000E91FB /* LoginViewController.swift in Sources */,
 				7D8D65A4206F1368003B06DE /* Post.swift in Sources */,
+				4846BCC5206F31DE00ADA865 /* animateViewController.swift in Sources */,
 				F8C91AA1206F2509000E91FB /* SignUpViewController.swift in Sources */,
 				7D8D65A8206F18B2003B06DE /* Review.swift in Sources */,
 				F8C91A9B206F1257000E91FB /* HomeViewController.swift in Sources */,

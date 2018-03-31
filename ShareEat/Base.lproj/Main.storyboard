@@ -10,6 +10,34 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Animate View Controller-->
+        <scene sceneID="tOh-rQ-BBa">
+            <objects>
+                <viewController id="EXq-zV-xmj" customClass="animateViewController" customModule="ShareEat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AyM-Wp-2JU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="peach-light-orange-colored-painted-wall-texture" translatesAutoresizingMaskIntoConstraints="NO" id="kZG-dT-LOw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-03-30 at 10.31.48 PM" translatesAutoresizingMaskIntoConstraints="NO" id="fmG-tX-o1x">
+                                <rect key="frame" x="25" y="45" width="374" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yJX-2m-EMY"/>
+                    </view>
+                    <connections>
+                        <outlet property="MrLogo" destination="fmG-tX-o1x" id="XR4-7k-IBl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LVf-bl-m8Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-691.304347826087" y="131.25"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -349,7 +377,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Screen Shot 2018-03-30 at 10.31.48 PM" width="616" height="248"/>
         <image name="feed_tab" width="25" height="25"/>
+        <image name="peach-light-orange-colored-painted-wall-texture" width="3888" height="2592"/>
         <image name="profile_tab" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
