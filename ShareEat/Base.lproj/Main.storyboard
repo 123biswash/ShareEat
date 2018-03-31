@@ -189,19 +189,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lET-v0-7lN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2674" y="787"/>
+            <point key="canvasLocation" x="1967" y="1508"/>
         </scene>
         <!--Home-->
         <scene sceneID="h31-o1-38E">
             <objects>
-                <viewController id="Nve-2m-jSo" sceneMemberID="viewController">
+                <viewController id="Nve-2m-jSo" customClass="HomeViewController" customModule="ShareEat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BEN-Ph-Rih">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zu-hk-CaZ">
+                                <rect key="frame" x="27" y="624" width="360" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                <state key="normal" title="Add My food"/>
+                                <connections>
+                                    <action selector="loginAction:" destination="RdM-9m-CYw" eventType="touchUpInside" id="9AQ-WH-FyM"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="yF0-yZ-Mc8"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="XRS-HT-UWk"/>
+                    <connections>
+                        <outlet property="addFoodButton" destination="1zu-hk-CaZ" id="IW1-RP-CbU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7gj-oB-CuC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -210,7 +224,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="1HE-5S-4sg">
             <objects>
-                <tabBarController id="xh8-Wb-2Qf" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="AuthenticatedViewController" id="xh8-Wb-2Qf" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="r3v-tj-hWE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -223,7 +237,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="05a-GZ-w6e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1048" y="458"/>
+            <point key="canvasLocation" x="1048" y="457"/>
         </scene>
         <!--Home-->
         <scene sceneID="UrQ-2V-rND">
@@ -261,7 +275,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NVI-eT-RUd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1966.6666666666667" y="786.68478260869574"/>
+            <point key="canvasLocation" x="1967" y="812"/>
         </scene>
     </scenes>
     <resources>
