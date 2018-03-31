@@ -7,7 +7,7 @@ target 'ShareEat' do
 
   # Pods for ShareEat
   pod 'Parse'
-  pod 'Eureka', '~> 3.0.0'
+  pod 'Eureka', '~> 4.0'
 
   target 'ShareEatTests' do
     inherit! :search_paths
