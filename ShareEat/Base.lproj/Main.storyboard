@@ -288,7 +288,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Bnq-as-g9O"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Add your Food" id="vtw-Yh-UqJ"/>
+                    <navigationItem key="navigationItem" title="Add your Food" id="vtw-Yh-UqJ">
+                        <barButtonItem key="rightBarButtonItem" title="Post" id="6ri-v1-6Yx"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7wV-A9-SdJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -300,6 +302,6 @@
         <image name="profile_tab" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Gak-Zk-9oQ"/>
+        <segue reference="FA7-lL-WIR"/>
     </inferredMetricsTieBreakers>
 </document>
