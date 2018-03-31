@@ -8,16 +8,46 @@
 
 import UIKit
 import WebKit
+import Parse
+import CoreLocation
+import MapKit
 
-class MapViewController: UIViewController {
-
+class MapViewController: UIViewController, CLLocationManagerDelegate {
+    var url: String = "https://www.google.com/maps"
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var confirmButton: UIButton!
     @IBOutlet weak var mapKitView: WKWebView!
+    let locationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        locationManager.requestWhenInUseAuthorization()
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
+        else{
+            print("Location service disabled");
+        }
+    }
+       
+        
 
         // Do any additional setup after loading the view.
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        var locValue : CLLocationCoordinate2D = manager.location!.coordinate;
+        let span2 = MKCoordinateSpanMake(1, 1)
+        let long = locValue.longitude;
+        let lat = locValue.latitude;
+        print(long);
+        print(lat);
+        //let loadlocation = CLLocationCoordinate2D(
+            //latitude: lat, longitude: long
+            
+       // )
+        
+        locationManager.stopUpdatingLocation();
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,11 +56,27 @@ class MapViewController: UIViewController {
     }
     
 
+    
+    
+    
     @IBAction func didTapCancel(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
+    
+    
+    
     
     @IBAction func didTapConfirm(_ sender: Any) {
     }
+    
+    func loadUrlWebView() {
+        let requestURL = URL(string:url)
+        // Place the URL in a URL Request.
+        let request = URLRequest(url: requestURL!)
+        // Load Request into WebView.
+        mapKitView.load(request)
+    }
+    
     /*
     // MARK: - Navigation
 
