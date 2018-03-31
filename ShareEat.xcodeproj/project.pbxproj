@@ -19,6 +19,7 @@
 		7D5D9624206F64AD00AFA69E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5D9623206F64AD00AFA69E /* ProfileViewController.swift */; };
 		7D5D9626206F78CA00AFA69E /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5D9625206F78CA00AFA69E /* ReviewCell.swift */; };
 		7D5D9628206FA10F00AFA69E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5D9627206FA10F00AFA69E /* MapViewController.swift */; };
+		7D5D962A206FDCD200AFA69E /* ConfirmedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5D9629206FDCD200AFA69E /* ConfirmedViewController.swift */; };
 		7D8D65A4206F1368003B06DE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D65A3206F1368003B06DE /* Post.swift */; };
 		7D8D65A6206F17B3003B06DE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D65A5206F17B3003B06DE /* User.swift */; };
 		7D8D65A8206F18B2003B06DE /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D65A7206F18B2003B06DE /* Review.swift */; };
@@ -68,6 +69,7 @@
 		7D5D9623206F64AD00AFA69E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7D5D9625206F78CA00AFA69E /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 		7D5D9627206FA10F00AFA69E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		7D5D9629206FDCD200AFA69E /* ConfirmedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmedViewController.swift; sourceTree = "<group>"; };
 		7D8D65A3206F1368003B06DE /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		7D8D65A5206F17B3003B06DE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7D8D65A7206F18B2003B06DE /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				7D5D9621206F548F00AFA69E /* DetailsViewController.swift */,
 				7D5D9623206F64AD00AFA69E /* ProfileViewController.swift */,
 				7D5D9627206FA10F00AFA69E /* MapViewController.swift */,
+				7D5D9629206FDCD200AFA69E /* ConfirmedViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -503,9 +506,9 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ShareEat/Pods-ShareEat-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
-				"${BUILT_PRODUCTS_DIR}/HCSStarRatingView/HCSStarRatingView.framework",
 				"${BUILT_PRODUCTS_DIR}/ImageRow/ImageRow.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
@@ -514,9 +517,9 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateToolsSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HCSStarRatingView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageRow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
@@ -544,6 +547,7 @@
 				7D8D65A4206F1368003B06DE /* Post.swift in Sources */,
 				F8C91AA1206F2509000E91FB /* SignUpViewController.swift in Sources */,
 				7D8D65A8206F18B2003B06DE /* Review.swift in Sources */,
+				7D5D962A206FDCD200AFA69E /* ConfirmedViewController.swift in Sources */,
 				F8C91AA4206F302F000E91FB /* AddFoodViewController.swift in Sources */,
 				F8C91AA9206F61B4000E91FB /* FoodCell.swift in Sources */,
 				F8C91A9B206F1257000E91FB /* HomeViewController.swift in Sources */,
