@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "827557A68DC8F7968FF163A4C53FF05D"
+               BlueprintIdentifier = "2D359DECF1C3BBE0E527792B5929CB57"
                BuildableName = "Pods_ShareEat.framework"
                BlueprintName = "Pods-ShareEat"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "827557A68DC8F7968FF163A4C53FF05D"
+            BlueprintIdentifier = "2D359DECF1C3BBE0E527792B5929CB57"
             BuildableName = "Pods_ShareEat.framework"
             BlueprintName = "Pods-ShareEat"
             ReferencedContainer = "container:Pods.xcodeproj">
