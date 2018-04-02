@@ -6,11 +6,17 @@ target 'ShareEat' do
   use_frameworks!
 
   # Pods for ShareEat
-
+  pod 'Parse'
+  pod 'Eureka', '~> 4.0'
+  pod 'ImageRow', '~> 3.0'
+  pod 'ParseUI'
+  pod 'MBProgressHUD'
+  pod 'DateToolsSwift'
+  pod 'Cosmos', '~> 15.0'
+ 
   target 'ShareEatTests' do
     inherit! :search_paths
-    pod 'Parse'
-    # Pods for testing
+        # Pods for testing
   end
 
   target 'ShareEatUITests' do

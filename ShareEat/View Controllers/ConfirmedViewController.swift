@@ -1,18 +1,23 @@
 //
-//  LoginViewController.swift
+//  ConfirmedViewController.swift
 //  ShareEat
 //
-//  Created by Biswash Adhikari on 3/30/18.
+//  Created by Pranaya Adhikari on 3/31/18.
 //  Copyright © 2018 Biswash Adhikari. All rights reserved.
 //
 
 import UIKit
+import Cosmos
 
-class LoginViewController: UIViewController {
-
+class ConfirmedViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        
+        
+       
         // Do any additional setup after loading the view.
     }
 
