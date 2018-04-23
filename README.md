@@ -13,7 +13,15 @@ The following **REQUIRED** functionality is completed:
 - [x] ReviewViewController to let users rate each other
 - [x] ProfileViewController to allow users to setup their profile and show a tableView of reviews that they have gotten 
 
+The following **OPTIONAL** user stories are completed:
 
+- [x] Style the login and signUp pages
+- [x] User can use a Tab bar to switch between profile view and home view
+- [x] Show the username and creation time for each post
+- [x] After the user submits a new post, show a progress HUD while the post is being uploaded to Parse
+- [x] Allow the logged in user to add a profile photo
+- [x] Display the profile photo with each post
+- [x] Run your app on your phone and use the camera to take the photo
 
 ## Video Walkthrough
 
