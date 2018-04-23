@@ -3,7 +3,7 @@
 **ShareEat** is a food-sharing app where people can share home-cooked food and get paid. Buyers are able to order home-cooked food at affordable prices. 
 ## User Stories
 
-The following functionality is completed:
+The following **REQUIRED** functionality is completed:
 
 - [x] Login and sign up screens and setup Parse
 - [x] HomeViewController to display tableView of list of available food options
@@ -19,7 +19,7 @@ The following functionality is completed:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://imgur.com/a/Y22eUzf' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://media.giphy.com/media/1j8LLcYCnScHdwwtoh/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 
