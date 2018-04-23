@@ -19,7 +19,7 @@ The following functionality is completed:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://media.giphy.com/media/WvHVuaIcb7ZHrljqHL/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/g8fFLLG' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 
