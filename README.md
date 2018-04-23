@@ -1,7 +1,7 @@
 # ShareEat
 
 **ShareEat** is a food-sharing app where people can share home-cooked food and get paid. Buyers are able to order home-cooked food at affordable prices. 
-## User Stories
+## User Stories 
 
 The following **REQUIRED** functionality is completed:
 
