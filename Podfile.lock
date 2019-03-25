@@ -23,6 +23,17 @@ DEPENDENCIES:
   - Parse
   - ParseUI
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Bolts
+    - Cosmos
+    - DateToolsSwift
+    - Eureka
+    - ImageRow
+    - MBProgressHUD
+    - Parse
+    - ParseUI
+
 SPEC CHECKSUMS:
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   Cosmos: a6dbd3d0baa0cc8f51f8598f7508d5a09d0a9ade
@@ -35,4 +46,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 37ffb47515fafca656e8407556b09afaa6c2bd86
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
